@@ -4,7 +4,7 @@
 #' @export
 
 peng_compliance <- function(){
-  if("package:ggplot2" %in% search()==FALSE)
-    stop("\nPENG ERROR:  ggplot2 not detected!\nPENG ERROR:  You are not in compliance with the PENG group policies")
+  if("package:ggplot2" %in% search())
+    stop("\nPENG ERROR:  ggplot2 is detected!\nPENG ERROR:  You are not in compliance with the PENG group policies")
   cat("You are in compliance with the PENG group policies\n")
 }
